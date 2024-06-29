@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" scale="initial-scale=1.0">
+        <link rel="icon" href="img/sjs.png">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/76f5d35c55.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="navelements">
+                <div class="portfoliodiv">
+                  <h1 class="porfoword">Portfo<span class="lioword">lio</span></h1>
+                </div>
+                <div class="allicons">
+                    <div class="home_iconword"><a class="homeicon" href="index.html"><div><i class="fas fa-home"></i></div><div class="iconword">Home</div></a></div>
+                    <div class="div_iconword"><a href="about.html"><div><i class="fas fa-info-circle"></i></div><div class="iconword">About</div></a></div>
+                    <div class="div_iconword"><a href="education.html"><div><i class="fas fa-book-reader"></i></div><div class="iconword">Education</div></a></div>
+                    <div class="div_iconword"><a href="skill.html"><div><i class="fas fa-user-tie"></i></div><div class="iconword">Service</div></a></div>
+                    <div class="div_iconword"><a href="contact.html"><div><i class="fas fa-phone"></i></div><div class="iconword">Contact</div></a></div>
+                    <div class="menu"><a href="options.html"><div><i class="fas fa-bars"></i></div><div class="iconword">Menu</div></a></div>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <div class="contentsdiv">
+          <div class="photoflexcontents">
+            <div class="photodiv">
+                <img class="photo" src="img/laptop.png">
+            </div>
+            <div class="contents" style="margin-left:3%;">
+                <h2 style="color:white;">Hello,Myself!<br><span class="name">Samuel George</span><br>And Iam a <span style="color:red;" id="element" class=""></span></h2>
+                <p>As a dedicated and ambitious Computer Science 
+                   and Engineering student,I am passionate about 
+                   harnessing technology to solve real-world problems.
+                   With a strong foundation in programming, algorithms, 
+                   and software development.
+                </p>
+                <div>
+                  <a href=""><i id="followface" class="fab fa-facebook-square"></i></a>
+                  <a href="https://www.linkedin.com/in/samuel-george-j004"><i id="followlink" class="fab fa-linkedin"></i></a>
+                  <a href=""><i id="followtele" class="fab fa-twitter-square"></i></a>
+                  <a href=""><i id="followwhat" class="fab fa-whatsapp-square"></i></a>
+                </div>
+                <div class="buttons">
+                <div>
+                  <a href=""><button class="hire">HireMe <i class="fas fa-user"></i></button></a>
+                </div>
+                <div class="buttonsdiv">
+                 <a href=""><button class="download">Resume <i class="fas fa-download"></i></button></a>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+          var typed = new Typed('#element',
+          {
+          strings: ['Web Developer.','CSE Engineer.','Web Designer.'],
+          typeSpeed: 100,
+          backSpeed: 50,
+          backDelay:1000,
+          loop: true
+          });
+        </script>
+        <script src="index.js"></script>
+    </body>
+</html>
