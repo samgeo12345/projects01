@@ -4,23 +4,25 @@ html,body{
     padding:0;
 }
 html{
-    background-color:rgb(30,30,30);
+    background-color:white;
 }
 body{
     font-family:verdana;
-    display:flex;
     justify-content:center;
     align-items:center;
     width:100%;
 }
+.topheading{
+    display:none;
+}
 .portfoliodiv{
     padding:0px 15px;
     border-radius:5px;
-    box-shadow:0px 0px 5px rgba(255,0,0,0.9);
+    box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
     margin-left:1%;
 }
 .porfoword{
-    color:white;
+    color:black;
 }
 .lioword{
     color:red;
@@ -28,19 +30,19 @@ body{
 nav{
     position:fixed;
     top:0;
-    background-color:rgb(20,20,20);
+    background-color:white;
     width:100%;
     padding:10px;
     z-index:1;
 }
 a{
-    color:lightgray;
+    color:dimgray;
     text-decoration:none;
     font-size:x-large;
     transition:color 0.3s ease-in-out;
 }
 p{
-    color:white;
+    color:black;
 }
 a:hover{
     color:red;
@@ -48,30 +50,31 @@ a:hover{
 .menu{
     padding:13px;
     margin-left:3%;
-    display:none;
     border-radius:4px;
     transition:background-color 0.3s ease-in-out,transform 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
 }
 .menu:hover{
-    box-shadow:5px 5px 5px rgba(255,0,0,0.9);
+    box-shadow:5px 5px 5px rgba(0,0,0,0.3);
     transform:translateX(-3px);
     border-radius:4px;
 }
 .contentsdiv{
     margin-top:9%;
     margin-left:2%;
+    width:95%;
     padding-bottom:5%;
 }
 .name{
     font-size:45px;
-    color:black;
-    filter:drop-shadow(0px 0px 1px rgba(255,255,255,0.9));
+    color:gray;
+    filter:drop-shadow(0px 0px 0.6px rgba(0,0,0,0.9));
 }
 .photoflexcontents{
     display:flex;
 }
 .photodiv{
     margin-left:4%;
+    border-radius:10px;
 }
 .iconword{
     font-size:small;
@@ -81,21 +84,32 @@ a:hover{
     padding:13px;
     margin-left:3%;
     border-radius:4px;
-    background-color:black;
-    box-shadow:0px 0px 5px rgba(255,0,0,0.9);
+    box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
     transform:translateX(0px);
     border-radius:4px;
     transition:transform 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
 }
 .paboutdiv{
-    margin-top:20%;
     text-align:start;
     width:96%;
 }
 .allicons{
     display:flex;
     text-align:center;
-    margin-left:40%;
+    margin-left:38%;
+}
+.allicons2{
+    display:none;
+    width:100%;
+    bottom:0%;
+    background-color:white;
+    position:fixed;
+    display:flex;
+    text-align:center;
+    justify-content:center;
+}
+.bottomnav{
+    display:none;
 }
 .homeicon,.abouticon,.educationicon,.skillicon,.contacticon{
     color:red;
@@ -107,26 +121,9 @@ a:hover{
     transition:background-color 0.3s ease-in-out,transform 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
 }
 .div_iconword:hover{
-    box-shadow:5px 5px 5px rgba(255,0,0,0.9);
+    box-shadow:5px 5px 5px rgba(0,0,0,0.3);
     transform:translateX(-3px);
     border-radius:4px;
-}
-.div_iconword2{
-    margin:10px;
-    padding:13px;
-    margin-left:3%;
-    border-radius:4px;
-    box-shadow:0px 0px 5px rgba(255,0,0,0.9);
-    transition:background-color 0.3s ease-in-out,transform 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
-}
-.div_iconword2:hover{
-    box-shadow:5px 5px 5px rgba(255,0,0,0.9);
-    transform:translateX(-3px);
-    border-radius:4px;
-}
-.iconword2{
-    font-size:small;
-    font-weight:bold;
 }
 .navelements{
     display:flex;
@@ -135,12 +132,11 @@ a:hover{
 .photo{
     block-size:250px;
     margin-top:8%;
+    background-color:whitesmoke;
+    box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
+    border-radius:10px;
     animation:moveUpDown 3s infinite;
-    filter:drop-shadow(0px 0px 4px rgba(255,0,0,0.9));
-    transition:filter 0.3s ease-in-out;
-}
-.photo:hover{
-    filter:drop-shadow(0px 0px 8px rgba(255,0,0,0.9));
+    transition:transform 0.3s,filter 0.3s ease-in-out;
 }
 @keyframes moveUpDown {
     0% {
@@ -163,37 +159,18 @@ a:hover{
 .buttonsdiv{
     margin-left:2%;
 }
-table{
-    border-radius:10px;
-    padding:20px;
-    margin:auto;
-    margin-top:5%;
-    color:white;
-    background-color:rgb(20,20,20);
-    box-shadow:0px 0px 3px 2px rgba(255,0,0,0.9);
-    transition:box-shadow 0.3s ease-in-out;
-}
-.table1{
-    border-radius:10px;
-    padding:20px;
-    margin:auto;
-    margin-top:100%;
-    color:white;
-    box-shadow:0px 0px 3px 2px rgba(255,0,0,0.9);
-    transition:box-shadow 0.3s ease-in-out;
-}
 .td{
-    color:red;
+    color:black;
     font-weight:bold;
 }
 @media(max-width:650px){
     table{
         margin:15px;
-        box-shadow:0px 0px 5px 3px rgba(255,0,0,0.9);
+        box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
     }
     .table1{
         margin:15px;
-        box-shadow:0px 0px 5px 3px rgba(255,0,0,0.9);
+        box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
     }
     .divtabledivs{
         margin-top:150%;
@@ -205,101 +182,96 @@ table{
     font-size:medium;
     border-radius:6px;
     border-style:solid;
-    box-shadow:0px 0px 4px rgba(255,0,0,0.9);
     padding:20px 80px;
     cursor:pointer;
 }
 .hire{
     background-color:black;
-    color:lightgray;
+    color:white;
     border-color:black;
     transition:transform 0.3s ease-in-out,border-color 0.3s ease-in-out,box-shadow 0.3s ease-in-out,background-color 0.3s ease-in-out,color 0.3s ease-in-out;
 }
 .hire:hover{
-    box-shadow:0px 0px 4px 3px rgba(255,0,0,0.9);
-    color:red;
+    border-color:black;
+    color:black;
+    background-color:white;
 }
 .download{
-    background-color:black;
-    color:lightgray;
-    border-color:black;
+    background-color:dimgray;
+    color:white;
+    border-color:dimgray;
     transition:transform 0.3s ease-in-out,border-color 0.3s ease-in-out,box-shadow 0.3s ease-in-out,background-color 0.3s ease-in-out,color 0.3s ease-in-out;
 }
 .download:hover{
-    box-shadow:0px 0px 4px 3px rgba(255,0,0,0.9);
-    color:red;
+    border-color:black;
+    color:black;
+    background-color:white;
 }
 #followface{
-    color:red;
+    color:mediumblue;
     font-size:50px;
     border-width:thin;
     transition:color 0.3s ease-in-out,filter 0.3s ease-in-out,transform 0.3s ease-in-out ;
 }
 #followface:hover{
-    filter:drop-shadow(0px 0px 3px rgba(255,0,0,0.9));
-    color:black;
+    filter:drop-shadow(0px 5px 1px rgba(0,0,0,0.3));
     transform:translateY(-5px);
 }
 #followlink{
     margin-left:1%;
-    color:red;
+    color:mediumblue;
     font-size:50px;
     border-width:thin;
     transition:color 0.3s ease-in-out,transform 0.3s ease-in-out,filter 0.3s ease-in-out ;
 }
 #followlink:hover{
-    filter:drop-shadow(0px 0px 3px rgba(255,0,0,0.9));
-    color:black;
+    filter:drop-shadow(0px 5px 1px rgba(0,0,0,0.3));
     transform:translateY(-5px);
 }
 #followtele{
     margin-left:1%;
-    color:red;
+    color:darkorchid;
     font-size:50px;
     border-width:thin;
     transition:color 0.3s ease-in-out,transform 0.3s ease-in-out,filter 0.3s ease-in-out;
 }
 #followtele:hover{
-    filter:drop-shadow(0px 0px 3px rgba(255,0,0,0.9));
-    color:black;
+    filter:drop-shadow(0px 5px 1px rgba(0,0,0,0.3));
     transform:translateY(-5px);
 }
 #followwhat{
     margin-left:1%;
-    color:red;
+    color:limegreen;
     font-size:50px;
     border-width:thin;
     transition:color 0.3s ease-in-out,transform 0.3s ease-in-out,filter 0.3s ease-in-out;
 }
 #followwhat:hover{
-    filter:drop-shadow(0px 0px 3px rgba(255,0,0,0.9));
-    color:black;
+    filter:drop-shadow(0px 5px 1px rgba(0,0,0,0.3));
     transform:translateY(-5px);
 }
 .webservicediv,.designservicediv{
     width:40%;
     padding:20px;
     margin:20px;
-    background-color:rgb(20,20,20);
     text-align:center;
+    background-color:whitesmoke;
+    box-shadow:5px 5px 5px rgba(0,0,0,0.3);
     border-radius:10px;
-    box-shadow:0px 0px 3px 2px rgba(255,0,0,0.9);
     transition:box-shadow 0.3s ease-in-out;
 }
 #webdesign,#design{
-    color:red;
+    color:black;
     font-size:xx-large;
 }
 .servicesdiv{
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
-    margin-top:8%;
 }
 .contactdetails{
     display:flex;
     justify-content:center;
-    margin-top:10%;
     flex-wrap:wrap;
 }
 .userdetailsdiv{
@@ -311,28 +283,26 @@ table{
     text-align:center;
     padding:10px 20px;
     margin:30px;
+    padding-bottom:5%;
+    box-shadow:0px 0px 2px rgba(0,0,0,0.9);
     border-radius:10px;
-    background-color:rgba(20,20,20);
-    box-shadow:0px 0px 3px 2px rgba(255,0,0,0.9);
+    background-color:lightgray;
     transition:box-shadow 0.3s ease-in-out;
 }
-.customerdetails:hover,table:hover,.table1:hover,
 .webservicediv:hover,.designservicediv:hover{
-    box-shadow:0px 0px 10px 5px rgba(255,0,0,0.9);
+    box-shadow:0px 0px 5px rgba(0,0,0,0.9);
 }
 #envelopicon,#usericon,#mobileicon{
     font-size:x-large;
-    color:red;
+    color:gray;
 }
 hr{
-    border-width:2px;
-    border-color:red;
+    border-width:3px;
+    border-style:solid;
+    border-color:black;
 }
 h2{
-    color:red;
-}
-h4{
-    color:lightgray;
+    color:black;
 }
 .textarea{
     padding-bottom:55px;
@@ -344,37 +314,48 @@ h4{
     width:86.5%;
     margin:2px;
     background-color:black;
-    box-shadow:0px 0px 3px rgba(255,0,0,0.9);
     border-color:black;
-    color:lightgray;
+    color:white;
     border-style:solid;
     border-radius:5px;
     font-weight:bold;
-    transition:color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;;
+    transition:background-color 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;;
+}
+.sendbutton:hover{
+    background-color:white;
+    color:black;
 }
 input,textarea{
     padding:10px 0px;
     width:86%;
     color:white;
     border-style:solid;
-    box-shadow:0px 0px 3px rgba(255,0,0,0.9);
-    border-color:rgba(30,30,30);
+    border-color:white;
+    box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
     border-radius:5px;
     margin:3px;
-    background-color:rgba(30,30,30);
-    transition:box-shadow 0.3s ease-in-out;
+    background-color:white;
+    transition:border-color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
 }
 input::placeholder,textarea::placeholder{
     font-family:Verdana;
     padding-left:10px;
-    color:darkgray;
+    color:gray;
     transition:color 0.3s ease-in-out;
 }
-input:hover,textarea:hover,.sendbutton:hover{
-    box-shadow:0px 0px 2px 2px rgba(255,0,0,0.9);
+input:hover,textarea:hover{
+    border-color:black;
+    box-shadow:none;
 }
-input:hover::placeholder,textarea:hover::placeholder,.sendbutton:hover{
-    color:red;
+input:hover::placeholder,textarea:hover::placeholder{
+    color:black;
+}
+.socialbottom{
+    text-align:center;
+    background-color:whitesmoke;
+    box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
+    padding-top:2%;
+    padding-bottom:2%;
 }
 @media(max-width:1000px){
     .allicons{
@@ -383,19 +364,10 @@ input:hover::placeholder,textarea:hover::placeholder,.sendbutton:hover{
     .contentsdiv{
         margin-top:20%;
     }
-    .paboutdiv{
-        margin-top:40%;
-    }
-    .contactdetails{
-        margin-top:20%;
-    }
 }
 @media(max-width:950px){
     .allicons{
         margin-left:30%;
-    }
-    .customerdetails{
-        padding-bottom:5%;
     }
 }
 @media(max-width:900px){
@@ -413,9 +385,6 @@ input:hover::placeholder,textarea:hover::placeholder,.sendbutton:hover{
     .contentsdiv{
         margin-top:20%;
     }
-    .contactdetails{
-        margin-top:60%;
-    }
 }
 @media(max-width:850px){
     .allicons{
@@ -423,9 +392,6 @@ input:hover::placeholder,textarea:hover::placeholder,.sendbutton:hover{
     }
     .contentsdiv{
         margin-top:30%;
-    }
-    .contactdetails{
-        margin-top:65%;
     }
 }
 @media(max-width:840px){
@@ -438,19 +404,6 @@ input:hover::placeholder,textarea:hover::placeholder,.sendbutton:hover{
     .portfoliodiv{
         text-align:end;
     }
-    .div_iconword,.home_iconword,.about_iconword,.education_iconword,.skill_iconword,.contact_iconword{
-        display:none;
-    }
-    .menu{
-        margin-left:370px;
-        display:block;
-    }
-    .paboutdiv{
-        margin-top:50%;
-    }
-    .contactdetails{
-        margin-top:67%;
-    }
 }
 
 
@@ -458,228 +411,73 @@ input:hover::placeholder,textarea:hover::placeholder,.sendbutton:hover{
 
 @media(max-width:800px)
 {
-    .menu{
-        margin-left:350px;
+    nav{
+        display:none;
+    }
+    .navelements{
+        display:none;
+    }
+    .topheading{
         display:block;
     }
-    .servicesdiv{
-        margin-top:40%;
+    .bottomnav{
+        display:block;
     }
-    .paboutdiv{
-        margin-top:10%;
+    .allicons2{
+        box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
+    }
+    .contentsdiv{
+        margin-top:0;
     }
     .photoflexcontents{
-        flex-wrap:wrap;
+        margin-top:0;
     }
-    .photo{
-        block-size:100px;
-        filter:drop-shadow(0px 0px 3px rgba(255,0,0,0.9));
+    .div_iconword2{
+        padding:13px;
+        border-radius:4px;
+        transition:background-color 0.3s ease-in-out,transform 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
     }
-    .photo:hover{
-        filter:drop-shadow(0px 0px 6px rgba(255,0,0,0.9));
+    .div_iconword2:hover{
+        box-shadow:5px 5px 5px rgba(0,0,0,0.3);
+        transform:translateX(-3px);
+        border-radius:4px;
     }
-    .contents{
+    .iconword2{
         font-size:small;
     }
-    .name{
-        font-size:30px;
+    a{
+        color:dimgray;
+        text-decoration:none;
+        font-size:large;
+        transition:color 0.3s ease-in-out;
     }
-    .paboutdiv{
-        font-size:x-small;
+    .socialbottom{
+        padding-bottom:20%;
     }
     #followface,#followlink,#followtele,#followwhat{
         font-size:40px;
     }
-    .contactdetails{
-        margin-top:70%;
+    html{
+        font-size:small;
+    }
+    .name{
+        font-size:xx-large;
+    }
+    .photoflexcontents{
+        flex-wrap:wrap-reverse;
+    }
+    .photo{
+        margin-top:25%;
     }
 }
-@media(max-width:770px)
-{
-    .menu{
-        margin-left:330px;
-        display:block;
-    }
-    .servicesdiv{
-        margin-top:50%;
-    }
-    .contactdetails{
-        margin-top:72%;
-    }
-}
-@media(max-width:750px)
-{
-    .menu{
-        margin-left:310px;
-        display:block;
-    }
-    .servicesdiv{
-        margin-top:60%;
-    }
-    .contactdetails{
-        margin-top:74%;
-    }
-}
-@media(max-width:730px)
-{
-    .menu{
-        margin-left:290px;
-        display:block;
-    }
-    .servicesdiv{
-        margin-top:70%;
-    }
-    .contactdetails{
-        margin-top:76%;
-    }
-}
-@media(max-width:710px)
-{
-    .menu{
-        margin-left:270px;
-        display:block;
-    }
-    .servicesdiv{
-        margin-top:75%;
-    }
-    .contactdetails{
-        margin-top:78%;
-    }
-}
-@media(max-width:690px)
-{
-    .menu{
-        margin-left:250px;
-        display:block;
-    }
-    .servicesdiv{
-        margin-top:80%;
-    }
-    .contactdetails{
-        margin-top:80%;
-    }
-}
-@media(max-width:670px)
-{
-    .menu{
-        margin-left:230px;
-        display:block;
-    }
-    .servicesdiv{
-        margin-top:85%;
-    }
-    .contactdetails{
-        margin-top:82%;
-    }
-}
-@media(max-width:650px)
-{
-    .menu{
-        margin-left:210px;
-        display:block;
-    }
-    .servicesdiv{
-        margin-top:90%;
-    }
-    .paboutdiv{
-        margin-top:30%;
-    }
-    .contactdetails{
-        margin-top:84%;
-    }
-}
-@media(max-width:630px)
-{
-    .menu{
-        margin-left:190px;
-        display:block;
-    }
-    .paboutdiv{
-        margin-top:30%;
-    }
-    .contactdetails{
-        margin-top:86%;
-    }
-}
-@media(max-width:610px)
-{
-    .menu{
-        margin-left:170px;
-        display:block;
-    }
-    .paboutdiv{
-        margin-top:30%;
-    }
-    .contactdetails{
-        margin-top:88%;
-    }
-}
-@media(max-width:600px)
-{
-    .menu{
-        margin-left:160px;
-        display:block;
-    }  
-    .paboutdiv{
-        margin-top:30%;
-    }
-    .contactdetails{
-        margin-top:90%;
-    }
-}
-@media(max-width:590px)
-{
-    .menu{
-        margin-left:150px;
-        display:block;
-    }
-    .contactdetails{
-        margin-top:92%;
-    }
-}
-@media(max-width:580px)
-{
-    .menu{
-        margin-left:140px;
-        display:block;
-    }
-    .contactdetails{
-        margin-top:94%;
-    }
-}
-@media(max-width:575px)
-{
-    .menu{
-        margin-left:135px;
-        display:block;
-    }
-    .contactdetails{
-        margin-top:96%;
-    }
-}
+
 @media(max-width:570px)
 {
-    .menu{
-        margin-left:65px;
-        display:block;
-    }
-    .paboutdiv{
-        margin-top:50%;
-    }
-    .contents{
-        margin-top:-8%;
-    }
-    .contentsdiv{
-        padding-top:40px;
-    }
     .hire,.download{
         padding:15px 40px; 
     }
     .webservicediv,.designservicediv{
         width:70%;
-    }
-    .contactdetails{
-        margin-top:110%;
     }
     .customerdetails{
         padding-bottom:8%;
