@@ -30,7 +30,8 @@ body{
 nav{
     position:fixed;
     top:0;
-    background-color:white;
+    box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
+    background-color:whitesmoke;
     width:100%;
     padding:10px;
     z-index:1;
@@ -66,7 +67,7 @@ a:hover{
 }
 .name{
     font-size:45px;
-    color:gray;
+    color:darkgray;
     filter:drop-shadow(0px 0px 0.6px rgba(0,0,0,0.9));
 }
 .photoflexcontents{
@@ -78,7 +79,6 @@ a:hover{
 }
 .iconword{
     font-size:small;
-    font-weight:bold;
 }
 .home_iconword,.about_iconword,.education_iconword,.skill_iconword,.contact_iconword{
     padding:13px;
@@ -102,7 +102,7 @@ a:hover{
     display:none;
     width:100%;
     bottom:0%;
-    background-color:white;
+    background-color:whitesmoke;
     position:fixed;
     display:flex;
     text-align:center;
@@ -294,7 +294,7 @@ a:hover{
 }
 #envelopicon,#usericon,#mobileicon{
     font-size:x-large;
-    color:gray;
+    color:black;
 }
 hr{
     border-width:3px;
@@ -328,7 +328,6 @@ h2{
 input,textarea{
     padding:10px 0px;
     width:86%;
-    color:white;
     border-style:solid;
     border-color:white;
     box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
@@ -424,6 +423,8 @@ input:hover::placeholder,textarea:hover::placeholder{
         display:block;
     }
     .allicons2{
+        padding-top:1%;
+        padding-bottom:1%;
         box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
     }
     .contentsdiv{
