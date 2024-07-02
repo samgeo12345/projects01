@@ -325,6 +325,12 @@ h2{
     background-color:white;
     color:black;
 }
+.error{
+    color:red;
+}
+.success{
+    color:green;
+}
 input,textarea{
     padding:10px 0px;
     width:86%;
