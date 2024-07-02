@@ -195,15 +195,17 @@
                   <p style="color:blue;text-decoration:underline;">+91 9894479397</p>
               </div>
               <div class="customerdetails">
+                <form name="submit-to-google-sheet">
                   <h2>GET IN TOUCH</h2>
-                      <input type="text" placeholder="Name">
-                      <input type="text" placeholder="Email">
+                      <input type="text" name="Name" placeholder="Name">
+                      <input type="text" name="Email" placeholder="Email">
                   <div class="messagediv">
-                      <textarea class="textarea" placeholder="Your Message"></textarea>
+                      <textarea class="textarea" name="Your message" placeholder="Your Message"></textarea>
                   </div>
                   <div class="senddiv">
                       <button class="sendbutton" type="submit">SEND</button>
                   </div>
+                  </form>
               </div>
           </div>
         </div>
@@ -235,6 +237,13 @@
           backDelay:1000,
           loop: true
           });
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbxUWYmzJx9b9GHy-hNa03kMzCzk1CKNXOI_0-R9UAj0ZfKiK7u0HKOrzZc9ZRtKD4ZvDQ/exec'
+          const form = document.forms['submit-to-google-sheet']
+
+           form.addEventListener('submit', e => {
+           e.preventDefault()
+           fetch(scriptURL, { method: 'POST', body: new FormData(form)}).then(response => console.log('Success!', response)).catch(error => console.error('Error!', error.message))
+         });
         </script>
         <script src="index.js"></script>
     </body>
