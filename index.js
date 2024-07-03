@@ -33,40 +33,61 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', e => {
         e.preventDefault();
 
-        // Clear previous message
+        // Clear previous message and remove shake class
         msg.textContent = '';
         msg.className = '';
 
+        // Trigger shake on every click
+        triggerShake();
+
         // Validate form inputs in order
         if (!form['Name'].value) {
-            msg.textContent = 'name is required!';
+            msg.textContent = 'Name is required!';
             msg.className = 'error';
+            triggerShake();
             return;
         }
 
         if (!form['Email'].value) {
-            msg.textContent = 'email is required!';
+            msg.textContent = 'Email is required!';
             msg.className = 'error';
+            triggerShake();
             return;
         }
 
         if (!form['Your message'].value) {
-            msg.textContent = 'message is required!';
+            msg.textContent = 'Message is required!';
             msg.className = 'error';
+            triggerShake();
             return;
         }
 
-        // If all validations pass
+        // If all validations pass, show loading message
+        msg.textContent = 'Sending....';
+        msg.className = 'loading';
+
+        // Submit form
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
             .then(response => {
-                msg.textContent = 'sent successfully!';
+                msg.textContent = 'Sent successfully!';
                 msg.className = 'success';
                 setTimeout(function () {
                     msg.textContent = '';
                     msg.className = '';
-                }, 2000);
+                }, 4000);
                 form.reset();
             })
-            .catch(error => console.error('Error!', error.message));
+            .catch(error => {
+                msg.textContent = 'Error!';
+                msg.className = 'error';
+                console.error('Error!', error.message);
+            });
     });
+
+    function triggerShake() {
+        // Force reflow to restart the animation
+        msg.classList.remove('shake');
+        void msg.offsetWidth;
+        msg.classList.add('shake');
+    }
 });
