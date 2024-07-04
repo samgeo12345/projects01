@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // If all validations pass, show loading message
-        msg.textContent = 'Sending....';
+        msg.textContent = 'Sending message....';
         msg.className = 'loading';
 
         // Submit form

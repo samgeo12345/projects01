@@ -332,7 +332,7 @@ h2{
     color:green;
 }
 .loading{
-    color:blue;
+    color:dimgray;
 }
 .shake{
     animation:shake 0.8s;
