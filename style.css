@@ -131,23 +131,8 @@ a:hover{
 }
 .photo{
     block-size:250px;
-    margin-top:8%;
     background-color:whitesmoke;
-    box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
-    border-radius:10px;
-    animation:moveUpDown 3s infinite;
     transition:transform 0.3s,filter 0.3s ease-in-out;
-}
-@keyframes moveUpDown {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-    100% {
-        transform: translateY(0);
-    }
 }
 .typed-cursor{
     color:red;
@@ -197,14 +182,14 @@ a:hover{
     background-color:white;
 }
 .download{
-    background-color:dimgray;
+    background-color:red;
     color:white;
-    border-color:dimgray;
+    border-color:red;
     transition:transform 0.3s ease-in-out,border-color 0.3s ease-in-out,box-shadow 0.3s ease-in-out,background-color 0.3s ease-in-out,color 0.3s ease-in-out;
 }
 .download:hover{
-    border-color:black;
-    color:black;
+    border-color:red;
+    color:red;
     background-color:white;
 }
 #followface{
@@ -218,7 +203,6 @@ a:hover{
     transform:translateY(-5px);
 }
 #followlink{
-    margin-left:1%;
     color:mediumblue;
     font-size:50px;
     border-width:thin;
@@ -229,7 +213,6 @@ a:hover{
     transform:translateY(-5px);
 }
 #followtele{
-    margin-left:1%;
     color:darkorchid;
     font-size:50px;
     border-width:thin;
@@ -240,7 +223,6 @@ a:hover{
     transform:translateY(-5px);
 }
 #followwhat{
-    margin-left:1%;
     color:limegreen;
     font-size:50px;
     border-width:thin;
@@ -294,6 +276,40 @@ a:hover{
 }
 #envelopicon,#usericon,#mobileicon{
     font-size:x-large;
+    color:black;
+}
+.photoject{
+    box-shadow:0px 0px 1px rgba(0,0,0,0.9);
+    block-size:14em;
+    width:100%;
+}
+.projects{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.portfolioproject,.flightproject{
+    margin:20px;
+    text-align:center;
+    border-radius:8px;
+    overflow:hidden;
+    width:40%;
+    box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
+}
+.view{
+    width:50%;
+    margin-bottom:5%;
+    border-style:none;
+    font-weight:bold;
+    background-color:black;
+    color:white;
+    border-style:solid;
+    border-radius:5px;
+    block-size:35px;
+    transition:background-color 0.3s ease-in-out,color 0.3s ease-in-out; 
+}
+.view:hover{
+    background-color:white;
     color:black;
 }
 hr{
@@ -498,6 +514,9 @@ input:hover::placeholder,textarea:hover::placeholder{
     .photo{
         margin-top:25%;
     }
+    .portfolioproject,.flightproject{
+        width:50%;
+    }
 }
 
 @media(max-width:570px)
@@ -510,5 +529,8 @@ input:hover::placeholder,textarea:hover::placeholder{
     }
     .customerdetails{
         padding-bottom:7%;
+    }
+    .portfolioproject,.flightproject{
+        width:80%;
     }
 }
