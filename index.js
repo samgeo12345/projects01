@@ -10,6 +10,27 @@ document.addEventListener("DOMContentLoaded",function(){
     }
     setInterval(change,1500);
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const hireme = document.getElementById("hireme");
+
+    // Retrieve the stored click count from localStorage, or set it to 0 if it doesn't exist
+    let clickCount = localStorage.getItem('hireMeClickCount') || 0;
+
+    hireme.onclick = function() {
+        if (confirm("Do you want to send a notification for Hire?")) {
+            window.alert("Notification for Hire is sent!");
+            hireme.textContent = "Hired ✔";
+            hireme.style.color = "limegreen";
+
+            // Increment the click count and store it in localStorage
+            clickCount++;
+            localStorage.setItem('hireMeClickCount', clickCount);
+
+            console.log(`HireMe button clicked ${clickCount} times`);  // This log will be visible in the browser console
+        }
+    }
+});
+
 document.addEventListener("DOMContentLoaded",function(){
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
