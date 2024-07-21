@@ -510,7 +510,6 @@ input:hover::placeholder,textarea:hover::placeholder{
     }
     .socialbottom{
         padding-bottom:20%;
-        width:100%;
     }
     #followface,#followlink,#followtele,#followwhat{
         font-size:40px;
@@ -545,6 +544,9 @@ input:hover::placeholder,textarea:hover::placeholder{
     }
     .customerdetails{
         padding-bottom:7%;
+    }
+    .socialbottom{
+        width:100%;
     }
     .portfolioproject,.flightproject{
         width:80%;
