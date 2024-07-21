@@ -31,7 +31,7 @@ nav{
     position:fixed;
     top:0;
     box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
-    background-color:whitesmoke;
+    background-color:white;
     width:100%;
     padding:10px;
     z-index:1;
@@ -102,7 +102,7 @@ a:hover{
     display:none;
     width:100%;
     bottom:0%;
-    background-color:whitesmoke;
+    background-color:white;
     position:fixed;
     display:flex;
     text-align:center;
@@ -278,6 +278,11 @@ a:hover{
     font-size:x-large;
     color:black;
 }
+.hrpro{
+    width:20%;
+    border-color:black;
+    border-width:1px;
+}
 .photoject{
     box-shadow:0px 0px 1px rgba(0,0,0,0.9);
     block-size:14em;
@@ -294,7 +299,12 @@ a:hover{
     border-radius:8px;
     overflow:hidden;
     width:40%;
-    box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
+    background-color:whitesmoke;
+    box-shadow:5px 5px 5px rgba(0,0,0,0.3);
+    transition:box-shadow 0.3s ease-in-out;
+}
+.portfolioproject:hover,.flightproject:hover{
+    box-shadow:0px 0px 5px rgba(0,0,0,0.9);
 }
 .view{
     width:50%;
@@ -306,6 +316,7 @@ a:hover{
     border-style:solid;
     border-radius:5px;
     block-size:35px;
+    cursor:pointer;
     transition:background-color 0.3s ease-in-out,color 0.3s ease-in-out; 
 }
 .view:hover{
@@ -335,6 +346,7 @@ h2{
     border-style:solid;
     border-radius:5px;
     font-weight:bold;
+    cursor:pointer;
     transition:background-color 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;;
 }
 .sendbutton:hover{
@@ -516,6 +528,9 @@ input:hover::placeholder,textarea:hover::placeholder{
     }
     .portfolioproject,.flightproject{
         width:50%;
+    }
+    .hrpro{
+        width:40%;
     }
 }
 
