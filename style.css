@@ -131,7 +131,6 @@ a:hover{
 }
 .photo{
     block-size:250px;
-    background-color:whitesmoke;
     transition:transform 0.3s,filter 0.3s ease-in-out;
 }
 .typed-cursor{
