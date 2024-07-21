@@ -515,7 +515,7 @@ input:hover::placeholder,textarea:hover::placeholder{
         font-size:40px;
     }
     html{
-        font-size:small;
+        font-size:smaller;
     }
     .name{
         font-size:xx-large;
