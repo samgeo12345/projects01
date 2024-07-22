@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
     hireme.onclick = function() {
         if (confirm("Do you want to send a notification for Hire?")) {
             window.alert("Notification for Hire is sent!");
-            hireme.innerHTML = 'Hired <i class="fas fa-check-circle"></i>';
+            hireme.innerHTML = 'Hired <i class="fa-solid fa-check"></i>';
             hireme.style.color = "limegreen";
 
             // Increment the click count and store it in localStorage

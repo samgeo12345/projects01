@@ -231,6 +231,23 @@ a:hover{
     filter:drop-shadow(0px 5px 1px rgba(0,0,0,0.3));
     transform:translateY(-5px);
 }
+.tablediv{
+    background-color:whitesmoke;
+    padding:2px;
+    margin-top:2%;
+    border-radius:8px;
+    box-shadow:5px 5px 5px rgba(0,0,0,0.3);
+    transition:box-shadow 0.3s ease-in-out;
+}
+.tablediv h3{
+    margin-left:2%;
+}
+.tablediv p{
+    margin-left:2%;
+}
+.tablediv:hover{
+    box-shadow:0px 0px 5px rgba(0,0,0,0.9);
+}
 .webservicediv,.designservicediv{
     width:40%;
     padding:20px;
@@ -485,6 +502,15 @@ input:hover::placeholder,textarea:hover::placeholder{
     }
     .contentsdiv{
         margin-top:0;
+    }
+    .tablediv{
+        margin-top:4%;
+    }
+    .tablediv h3{
+        margin-left:4%;
+    }
+    .tablediv p{
+        margin-left:4%;
     }
     .photoflexcontents{
         margin-top:0;
