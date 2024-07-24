@@ -236,7 +236,7 @@ a:hover{
     padding:2px;
     margin-top:2%;
     border-radius:8px;
-    box-shadow:5px 5px 5px rgba(0,0,0,0.3);
+    box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
     transition:box-shadow 0.3s ease-in-out;
 }
 .tablediv h3{
@@ -254,7 +254,7 @@ a:hover{
     margin:20px;
     text-align:center;
     background-color:whitesmoke;
-    box-shadow:5px 5px 5px rgba(0,0,0,0.3);
+    box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
     border-radius:10px;
     transition:box-shadow 0.3s ease-in-out;
 }
@@ -273,9 +273,15 @@ a:hover{
     flex-wrap:wrap;
 }
 .userdetailsdiv{
-    text-align:center;
+    box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
+    background-color:whitesmoke;
+    border-radius:10px;
     padding:10px 60px;
     margin:30px;
+    transition:box-shadow 0.3s ease-in-out,transform 0.3s ease-in-out;
+}
+.userdetailsdiv:hover{
+    box-shadow:0px 0px 5px rgba(0,0,0,0.9);
 }
 .customerdetails{
     text-align:center;
@@ -286,6 +292,15 @@ a:hover{
     border-radius:10px;
     background-color:lightgray;
     transition:box-shadow 0.3s ease-in-out;
+}
+.names,.emails,.mobiles{
+    display:flex;
+    margin-top:5%;
+}
+.namesp,.emailsp,.mobilesp{
+    margin-top:-2%;
+    margin-left:6%;
+    font-weight:bold;
 }
 .webservicediv:hover,.designservicediv:hover{
     box-shadow:0px 0px 5px rgba(0,0,0,0.9);
@@ -316,7 +331,7 @@ a:hover{
     overflow:hidden;
     width:40%;
     background-color:whitesmoke;
-    box-shadow:5px 5px 5px rgba(0,0,0,0.3);
+    box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
     transition:box-shadow 0.3s ease-in-out;
 }
 .portfolioproject:hover,.flightproject:hover{
@@ -491,6 +506,7 @@ input:hover::placeholder,textarea:hover::placeholder{
     }
     .topheading{
         display:block;
+        font-size:xx-large;
     }
     .bottomnav{
         display:block;
@@ -501,7 +517,7 @@ input:hover::placeholder,textarea:hover::placeholder{
         box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
     }
     .contentsdiv{
-        margin-top:0;
+        margin:auto;
     }
     .tablediv{
         margin-top:4%;
