@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
             window.alert("Notification for Hire is sent!");
             hireme.innerHTML = 'Hired <i class="fa-solid fa-check"></i>';
             hireme.style.color = "limegreen";
+            hireme.style.backgroundColor="black";
 
             // Increment the click count and store it in localStorage
             clickCount++;
