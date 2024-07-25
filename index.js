@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let clickCount = localStorage.getItem('hireMeClickCount') || 0;
 
     hireme.onclick = function() {
-        if (confirm("Do you want to send a notification for Hire?")) {
+        if (confirm("Do you want to send a notification for Hiring?")) {
             window.alert("Notification for Hire is sent!");
             hireme.innerHTML = 'Hired <i class="fa-solid fa-check"></i>';
             hireme.style.color = "limegreen";
@@ -31,7 +31,25 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const photos = document.getElementById("photos");
+    const tooltip = document.getElementById("tooltip");
 
+    photos.addEventListener("mouseover", function(event) {
+        tooltip.style.display = "block";
+        tooltip.style.left = event.pageX + "px";
+        tooltip.style.top = event.pageY + "px";
+    });
+
+    photos.addEventListener("mousemove", function(event) {
+        tooltip.style.left = event.pageX + "px";
+        tooltip.style.top = event.pageY + "px";
+    });
+
+    photos.addEventListener("mouseout", function() {
+        tooltip.style.display = "none";
+    });
+});
 document.addEventListener("DOMContentLoaded",function(){
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -46,6 +64,19 @@ document.addEventListener("DOMContentLoaded",function(){
             }
         });
     });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const button = document.getElementById("buton");
+    button.onclick = function() {
+        if (confirm("Do you want to download the resume?")) {
+            const link = document.createElement('a');
+            link.href = 'img/Resume.pdf';
+            link.download = 'Resume.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    }
 });
 document.addEventListener('DOMContentLoaded', () => {
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxUWYmzJx9b9GHy-hNa03kMzCzk1CKNXOI_0-R9UAj0ZfKiK7u0HKOrzZc9ZRtKD4ZvDQ/exec';
