@@ -559,7 +559,7 @@ input:hover::placeholder,textarea:hover::placeholder{
         font-size:smaller;
     }
     .name{
-        font-size:36px;
+        font-size:35px;
     }
     .photoflexcontents{
         flex-wrap:wrap-reverse;
