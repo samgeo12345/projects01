@@ -607,15 +607,20 @@ input:hover::placeholder,textarea:hover::placeholder{
         padding:15px 40px; 
     }
     .webservicediv,.designservicediv{
-        width:70%;
+        width:80%;
     }
     .customerdetails{
+        padding:10px 10px;
+        margin:20px;
         padding-bottom:7%;
+    }
+    .input{
+        width:100%;
     }
     .socialbottom{
         width:100%;
     }
     .portfolioproject,.flightproject{
-        width:80%;
+        width:90%;
     }
 }
