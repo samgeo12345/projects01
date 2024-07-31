@@ -39,15 +39,18 @@ document.addEventListener("DOMContentLoaded", function() {
         tooltip.style.display = "block";
         tooltip.style.left = event.pageX + "px";
         tooltip.style.top = event.pageY + "px";
+        tooltip.style.transition="display 0.3s ease-in-out";
     });
 
     photos.addEventListener("mousemove", function(event) {
         tooltip.style.left = event.pageX + "px";
         tooltip.style.top = event.pageY + "px";
+        tooltip.style.transition="display 0.3s ease-in-out";
     });
 
     photos.addEventListener("mouseout", function() {
         tooltip.style.display = "none";
+        tooltip.style.transition="display 0.3s ease-in-out";
     });
 });
 document.addEventListener("DOMContentLoaded",function(){
