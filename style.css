@@ -556,6 +556,7 @@ input:hover::placeholder,textarea:hover::placeholder{
     }
     .photoflexcontents{
         margin-top:0;
+        flex-wrap:wrap;
         justify-content:center;
     }
     .div_iconword2{
@@ -589,11 +590,11 @@ input:hover::placeholder,textarea:hover::placeholder{
     .name{
         font-size:35px;
     }
-    .photoflexcontents{
-        flex-wrap:wrap;
+    .photodiv{
+        margin-left:0;
     }
     .photo{
-        margin-top:25%;
+        margin-top:20%;
     }
     .portfolioproject,.flightproject{
         width:50%;
